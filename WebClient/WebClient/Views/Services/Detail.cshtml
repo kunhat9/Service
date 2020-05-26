@@ -1,0 +1,48 @@
+﻿@using CORE.Tables
+
+@model List<TB_SERVICES>
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+<style>
+    .block-content{
+        border-top-width: 1px !important;
+        border-right-width: 1px !important;
+        border-bottom-width: 1px !important;
+        border-left-width: 1px !important;
+        border-left-color: #ededed !important;
+        border-left-style: solid !important;
+        border-right-color: #ededed !important;
+        border-right-style: solid !important;
+        border-top-color: #ededed !important;
+        border-top-style: solid !important;
+        border-bottom-color: #ededed !important;
+        border-bottom-style: solid !important;
+    }
+
+    .register{
+        background-color:#ff6300;
+        color:#ffffff;
+        font-size: 14px;
+        padding: 14px 20px;
+    }
+</style>
+
+<div class="form-group">
+    <div class="row">
+        @foreach (TB_SERVICES item in Model)
+        {
+            <div class="col-md-4 block-content">
+                <div style="box-sizing: border-box;padding-left: 15px;padding-right: 15px;width: 100%;">
+                    <h4>@item.ServiceName</h4>
+                    <p>Giá: <strong>@item.ServicePrice @item.ServiceUnit</strong></p>
+                    <p>Cơ sở: <strong>@item.ServiceBase</strong></p>
+                    <p style="text-align: JUSTIFY;">@item.ServiceContent</p>
+                    <button class="register">Đăng ký</button>
+                </div>
+            </div>
+        }
+    </div>
+</div>

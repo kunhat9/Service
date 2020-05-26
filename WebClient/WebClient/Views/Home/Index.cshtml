@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+<div class="page-header page-header-default">
+    <div class="page-header-content" style="background-color: #fcfcfc;">
+        <div class="page-title" style="padding: 20px 0;">
+            <h4>
+                <a href="javascript:void(0);" onclick="history.go(-1);"><i class="icon-arrow-left52 position-left"></i></a>
+                <span class="text-semibold">Home</span> - Dashboard
+            </h4>
+        </div>
+    </div>
+</div>
+<div class="content">
+
+</div>
+
+<script>
+    $("#view_financy").click(function () {
+        $("#financy").toggleClass("hidden");
+    })
+
+    $("#view_revenue").click(function () {
+        $("#revenue").toggleClass("hidden");
+    })
+    $(".txtCurrency").each(function () {
+        $(this).text(Features.FormatCurency($(this).text().split(",")[0]));
+    });
+</script>

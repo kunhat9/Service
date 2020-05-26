@@ -1,0 +1,5 @@
+C:\Users\Nothing\Desktop\DichVu\CORE\bin\Debug\CORE.dll
+C:\Users\Nothing\Desktop\DichVu\CORE\bin\Debug\CORE.pdb
+C:\Users\Nothing\Desktop\DichVu\CORE\obj\Debug\CORE.dll
+C:\Users\Nothing\Desktop\DichVu\CORE\obj\Debug\CORE.pdb
+C:\Users\Nothing\Desktop\DichVu\CORE\obj\Debug\CORE.csprojResolveAssemblyReference.cache
